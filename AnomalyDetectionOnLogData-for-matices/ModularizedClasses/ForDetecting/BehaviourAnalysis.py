@@ -1,4 +1,4 @@
-import pandas as pd
+﻿import pandas as pd
 import os
 
 from sklearn.preprocessing import StandardScaler
@@ -128,4 +128,4 @@ def behaviour_analysis(input_folder, output_path, user_path):
     output_file = os.path.join(output_path, f"{input_filename}.parquet")
     test_scaled.to_parquet(output_file, index=False)
     
-    print(f"\n✅ All datasets processed and saved successfully in: {output_path}")
+    print(f"\nâœ… All datasets processed and saved successfully in: {output_path}")

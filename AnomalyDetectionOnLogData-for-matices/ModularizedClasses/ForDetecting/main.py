@@ -77,15 +77,14 @@ if __name__ == "__main__":
     # Get true labels from file
     # Remove duplicates from abnormal_users
     abnormal_users = list(set(abnormal_users))
-    # Debug print
-    print("\nDetected Abnormal Users:")
-    print(f"Total count: {len(abnormal_users)}")
-    for i, user in enumerate(abnormal_users, 1):
-        print(f"{i}. {user}")
-    y_true = []
-    with open(Label, 'r') as f:
-        y_true = [line.strip() for line in f]
-        
-    comparison_df = create_comparison_df(y_true, abnormal_users)
-    evaluate_model_performance( comparison_df['Label'], comparison_df['DetectedAbnormal'])
+    # Suppressed for cleaner single-line anomaly output
+    # print("\nDetected Abnormal Users:")
+    # print(f"Total count: {len(abnormal_users)}")
+    # for i, user in enumerate(abnormal_users, 1):
+    #     print(f"{i}. {user}")
+    # y_true = []
+    # with open(Label, 'r') as f:
+    #     y_true = [line.strip() for line in f]
+    # comparison_df = create_comparison_df(y_true, abnormal_users)
+    # evaluate_model_performance( comparison_df['Label'], comparison_df['DetectedAbnormal'])
     
