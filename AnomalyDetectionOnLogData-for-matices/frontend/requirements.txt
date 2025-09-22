@@ -1,0 +1,13 @@
+streamlit
+pandas
+matplotlib
+plotly
+openpyxl
+requests
+jinja2
+weasyprint
+Flask
+PyJWT
+passlib[bcrypt]
+numpy
+bcrypt==4.0.1
